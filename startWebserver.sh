@@ -7,11 +7,15 @@ IMAGE_NAME=underwater-camera-project-webpage
 IMAGE_VERSION=0.0.1
 
 if [ -z "$(docker images -q $IMAGE_NAME:$IMAGE_VERSION 2> /dev/null)" ]; then
-  ./buildDockerImage.sh
+   ./buildDockerImage.sh
+   if [ -z "$(docker images -q $IMAGE_NAME:$IMAGE_VERSION 2> /dev/null)" ]; then
+      echo "ERROR: cannot find docker image $IMAGE_NAME:$IMAGE_VERSION"
+      exit 1
+   fi
 fi
 
 docker run -it --rm \
-	-v ./docs:/home/jekyll/docs:ro \
-	-e SITE_SOURCE=/home/jekyll/docs \
-	-p 4000:4000 \
-	$IMAGE_NAME:$IMAGE_VERSION
+   -v ./docs:/home/jekyll/docs:ro \
+   -e SITE_SOURCE=/home/jekyll/docs \
+   -p 4000:4000 \
+   $IMAGE_NAME:$IMAGE_VERSION
