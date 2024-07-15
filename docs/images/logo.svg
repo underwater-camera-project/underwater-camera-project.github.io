@@ -7,7 +7,7 @@
    viewBox="0 0 86.004494 86.455261"
    version="1.1"
    id="svg1"
-   inkscape:version="1.3.1 (91b66b0783, 2023-11-16)"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    sodipodi:docname="logo.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,11 +24,11 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1.4485269"
-     inkscape:cx="153.9495"
-     inkscape:cy="163.26931"
+     inkscape:cx="153.60433"
+     inkscape:cy="163.26932"
      inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="1912"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
@@ -49,11 +49,11 @@
      id="layer1"
      transform="translate(-1.1166661,-58.795832)">
     <g
-       id="g7"
-       transform="translate(-60.868546,52.225407)">
+       id="g1"
+       transform="translate(-0.01253107)">
       <g
          id="g4-1"
-         transform="translate(-9.3446423,-112.07957)">
+         transform="translate(-70.213188,-59.854163)">
         <path
            id="path1-1"
            style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -71,55 +71,55 @@
       <path
          id="path2-3"
          style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-dasharray:none"
-         d="M 104.99997,7.7204261 A 28.700001,28.700001 0 0 0 76.299908,36.420486 28.700001,28.700001 0 0 0 104.99997,65.120536 28.700001,28.700001 0 0 0 133.70003,36.420486 28.700001,28.700001 0 0 0 104.99997,7.7204261 Z m 0,3.7000299 A 25,25 0 0 1 130,36.420486 25,25 0 0 1 104.99997,61.420506 25,25 0 0 1 79.999948,36.420486 25,25 0 0 1 104.99997,11.420456 Z" />
+         d="m 44.131424,59.945833 a 28.700001,28.700001 0 0 0 -28.700062,28.70006 28.700001,28.700001 0 0 0 28.700062,28.700047 28.700001,28.700001 0 0 0 28.70006,-28.700047 28.700001,28.700001 0 0 0 -28.70006,-28.70006 z m 0,3.70003 a 25,25 0 0 1 25.00003,25.00003 25,25 0 0 1 -25.00003,25.000017 25,25 0 0 1 -25.000022,-25.000017 25,25 0 0 1 25.000022,-25.00003 z" />
       <path
          id="path4-8-4"
          style="fill:#000000;fill-opacity:0.303846;stroke:#000000;stroke-width:0.3;stroke-dasharray:none"
-         d="m 105,14.221346 c -0.31944,0.0159 -0.63851,0.0388 -0.95696,0.0684 l -4.651737,8.05742 13.639827,0.19356 h 9.2384 C 118.06863,17.297066 111.71884,14.238116 105,14.221286 Z m 15.84619,22.19951 4.76353,8.25098 c 1.02288,-2.55112 1.5898,-5.33428 1.58979,-8.2514 -8.1e-4,-4.24195 -1.21757,-8.39486 -3.50538,-11.96703 h -9.56545 z m -19.38996,-21.88957 c -6.995907,1.13125 -12.783877,5.45774 -15.975502,11.34255 l 4.919135,8.52005 c 3.63252,-6.65425 7.2648,-13.29594 11.056367,-19.8626 z m -17.001712,13.51094 c -1.06304,2.596 -1.65063,5.42677 -1.65403,8.37821 -3e-5,4.30945 1.23181,8.32922 3.35687,11.73426 h 9.739415 l -6.60488,-11.73384 z m 35.369212,10.12778 -6.93985,11.87192 -4.82861,8.3636 c 7.26466,-1.00057 13.40385,-5.51647 16.65422,-11.77388 z m -32.346482,11.87192 c 4.062005,5.21776 10.398085,8.57805 17.522752,8.57802 0.33165,0 0.66056,-0.0106 0.98866,-0.0251 l 4.93833,-8.553 H 96.959273 Z"
+         d="m 44.131454,66.446753 c -0.31944,0.0159 -0.63851,0.0388 -0.95696,0.0684 l -4.651737,8.05742 13.639827,0.19356 h 9.2384 c -4.2009,-5.24366 -10.55069,-8.30261 -17.26953,-8.31944 z m 15.84619,22.19951 4.76353,8.25098 c 1.02288,-2.55112 1.5898,-5.33428 1.58979,-8.2514 -8.1e-4,-4.24195 -1.21757,-8.39486 -3.50538,-11.96703 h -9.56545 z m -19.38996,-21.88957 c -6.995907,1.13125 -12.783877,5.45774 -15.975502,11.34255 l 4.919135,8.52005 c 3.63252,-6.65425 7.2648,-13.29594 11.056367,-19.8626 z m -17.001712,13.51094 c -1.06304,2.596 -1.65063,5.42677 -1.65403,8.37821 -3e-5,4.30945 1.23181,8.32922 3.35687,11.734257 h 9.739415 l -6.60488,-11.733837 z m 35.369212,10.12778 -6.93985,11.871917 -4.82861,8.3636 c 7.26466,-1.00057 13.40385,-5.51647 16.65422,-11.773877 z M 26.608702,102.26733 c 4.062005,5.21776 10.398085,8.57805 17.522752,8.57802 0.33165,0 0.66056,-0.0106 0.98866,-0.0251 l 4.93833,-8.553 H 36.090727 Z"
          sodipodi:nodetypes="ccccccccccccccccccccccccccccscccc" />
-      <g
-         id="g6"
-         transform="matrix(0.7066326,0,0,0.7066326,30.380776,24.999523)"
-         style="stroke-width:1.41516">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.2186px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.374428"
+    </g>
+    <g
+       id="g6"
+       transform="matrix(0.7066326,0,0,0.7066326,-30.077587,77.22493)"
+       style="stroke-width:1.41516">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.2186px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.374428"
+         x="43.682369"
+         y="89.221588"
+         id="text5-8"
+         transform="scale(1.0335893,0.96750228)"><tspan
+           sodipodi:role="line"
+           id="tspan5-8"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.2186px;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:0.374428"
            x="43.682369"
-           y="89.221588"
-           id="text5-8"
-           transform="scale(1.0335893,0.96750228)"><tspan
-             sodipodi:role="line"
-             id="tspan5-8"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.2186px;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:0.374428"
-             x="43.682369"
-             y="89.221588">UNDERWATER</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:7.04404px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.374428"
+           y="89.221588">UNDERWATER</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:7.04404px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.374428"
+         x="63.034412"
+         y="103.58517"
+         id="text6-2"
+         transform="scale(1.0929675,0.91494029)"><tspan
+           sodipodi:role="line"
+           id="tspan6-6"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.04404px;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:0.374428"
            x="63.034412"
-           y="103.58517"
-           id="text6-2"
-           transform="scale(1.0929675,0.91494029)"><tspan
-             sodipodi:role="line"
-             id="tspan6-6"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.04404px;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:0.374428"
-             x="63.034412"
-             y="103.58517">CAMERA PROJECT</tspan></text>
-        <rect
-           style="fill:#010101;fill-opacity:1;stroke:#000000;stroke-width:0.424549;stroke-dasharray:none"
-           id="rect6-9"
-           width="19.084919"
-           height="1.162421"
-           x="46.352852"
-           y="91.886345" />
-        <rect
-           style="fill:#010101;fill-opacity:1;stroke:#000000;stroke-width:0.424549;stroke-dasharray:none"
-           id="rect6-3-4"
-           width="19.084919"
-           height="1.162421"
-           x="144.56245"
-           y="91.886345" />
-      </g>
+           y="103.58517">CAMERA PROJECT</tspan></text>
+      <rect
+         style="fill:#010101;fill-opacity:1;stroke:#000000;stroke-width:0.424549;stroke-dasharray:none"
+         id="rect6-9"
+         width="19.084919"
+         height="1.162421"
+         x="46.352852"
+         y="91.886345" />
+      <rect
+         style="fill:#010101;fill-opacity:1;stroke:#000000;stroke-width:0.424549;stroke-dasharray:none"
+         id="rect6-3-4"
+         width="19.084919"
+         height="1.162421"
+         x="144.56245"
+         y="91.886345" />
     </g>
   </g>
 </svg>
