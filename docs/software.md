@@ -71,4 +71,3 @@ The source code for each service is freely available in a separate repository. F
     <li class="list-group-item"><a href="https://github.com/tederer/octowatch-monitoring" target="_blank">Monitoring Service</a></li>
     <li class="list-group-item"><a href="https://github.com/tederer/octowatch-irlightcontrol" target="_blank">InfraredLight Service</a></li>
 </ul>
-
