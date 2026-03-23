@@ -23,7 +23,7 @@ This document describes how to install all the required components required to u
 The following actions install and configure the operating system of the Raspberry Pi.
 
 1. Download the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) and install it.
-2. Download the "Raspberry Pi OS Lite"-Image (e.g. *2023-12-11-raspios-bookworm-armhf-lite.img.xz*) of the operating system [here](https://www.raspberrypi.com/software/operating-systems/).
+2. Download the "Raspberry Pi OS Lite"-Image (e.g. *2025-12-04-raspios-trixie-arm64-lite.img.xz*) of the operating system [here](https://www.raspberrypi.com/software/operating-systems/).
 3. Verify the downloaded file by comparing its SHA256 hash with the one provided by the download page.
 4. Connect the SD-card to your computer.
 5. Start the Raspberry Pi Imager.
@@ -36,16 +36,16 @@ The following actions install and configure the operating system of the Raspberr
    1. Add `enable_uart=1` to enable console access via the serial interface (GPIO14 & GPIO15).
    2. Uncomment `dtparam=i2c_arm=on` to activate the I²C interface for the temperature and humidity sensor (DHT20).
    3. Change `camera_auto_detect=1` to `camera_auto_detect=0` to manually configure the used camera.
-   4. Add `dtoverlay=imx462` to load the camera overlay.
+   4. Add `dtoverlay=imx462` to load the camera overlay (for other camera sensors [another overlay](https://www.raspberrypi.com/documentation/computers/camera_software.html) might be required).
 9.  To enable SSH access, create a file `ssh` without content in the root folder of the SD-card.
-10. Remove the SD-card and put it into your Raspi.
+10. Remove the SD-card, put it into your Raspi and connect it to the power supply.
 11. Connect your USB to UART board to the Raspi using GND (pin 6), TxD (pin 8) and RxD (pin 10).
 12. Connect your USB to UART board to your computer (using an USB cable).
 13. Open a terminal (e.g. [PuTTY](https://www.putty.org)) and establish a connection to the serial interface of your USB to UART board (115200 Baud, 8 data bits, 1 stop bit, no parity, no flow control).
 14. Connect the PoE-Adapter to the USB-Port which is closer to the center of the board.
 15. Connect the PoE-Adapter to a PoE-Injector.
-16. Login to the Raspi (by using PuTTY) and add "i2c-dev" to `/etc/modules` to load the I²C kernel module at boot time.
-17. Connect to a WiFi access point by executing `sudo nmcli --ask dev wifi connect <ssid>`. For getting a list of all access points us `iwlist wlan0 scan`.
+16. Execute `sudo sh -c "echo i2c-dev > /etc/modules-load.d/i2c.conf"` to be able to access I²C via files in /dev.
+17. Configure WLAN according to the Raspberry Pi [configuration documentation](https://www.raspberrypi.com/documentation/computers/configuration.html#wireless-networking-command-line).
 18. Execute `sudo apt-get update`.
 19. Execute `sudo apt install i2c-tools` to install tools required for I²C communication.
 20. Execute `sudo apt install nodejs npm` to install the JavaScript runtime environment.
