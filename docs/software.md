@@ -32,7 +32,7 @@ The first implementation of the InfraredLight service was based on the Python li
 
 ## Proxy (nginx)
 
-In addition to the camera's services, a proxy is required because web browsers prevent a video from being displayed if it does not come from the same source as the web page in which the video is embedded. The different ports used by the web server and the MPJPEG video stream are sufficient for the browsers to consider the two sources as independent of each other. The problem is solved by using a proxy (nginx) as the single point of contact for the browser. The nginx configuration used is as follows:
+In addition to the camera's services, a proxy is required because web browsers prevent a video from being displayed if it does not come from the same source as the web page in which the video is embedded. The different ports used by the web server and the MPJPEG video stream are sufficient for the browsers to consider the two sources as independent of each other. The problem is solved by using a proxy (nginx) as the single point of contact for the browser. To install it, execute `sudo apt install nginx` and create the nginx configuration file (`/etc/nginx/nginx.conf`) with the following contents:
 
 ```
 events {
@@ -41,21 +41,20 @@ events {
 http {
     server {
         listen 80;
-     
-        location / video {
-           proxy_pass http ://192.168.1.1:8887;
+
+        location /video {
+           proxy_pass http://lndf:8887;
         }
-     
+
         location / {
-            proxy_set_header X - Forwarded - For
-            $proxy_add_x_forwarded_for ;
-            proxy_set_header Host $host ;
-     
-            proxy_pass http ://192.168.1.1:8081;
-     
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header Host $host;
+
+            proxy_pass http://lndf:8081;
+
             proxy_http_version 1.1;
-            proxy_set_header Upgrade $http_upgrade ;
-            proxy_set_header Connection " upgrade ";
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "upgrade";
         }
     }
 }
