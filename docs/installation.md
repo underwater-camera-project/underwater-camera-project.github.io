@@ -61,7 +61,7 @@ The following actions install and configure the operating system of the Raspberr
 
 23. Execute `sudo reboot now` to apply all changes.
 24. Disconnect from Wifi by executing `sudo nmcli con down id <ssid>` to disconnect.
-
+25. Execute `sudo bash -c 'echo "vm.swappiness=0" >> /etc/sysctl.d/swappiness.conf'` to avoid using your SD-card as swap space.
 
 ## Downloading and compiling the services 
 
