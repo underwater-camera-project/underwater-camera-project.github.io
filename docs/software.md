@@ -39,6 +39,9 @@ events {
 }
 
 http {
+    error_log  /var/log/nginx_error.log warn;
+    access_log /var/log/nginx_access.log;
+
     server {
         listen 80;
 
