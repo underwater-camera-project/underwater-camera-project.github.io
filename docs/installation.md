@@ -67,6 +67,7 @@ The following actions install and configure the operating system of the Raspberr
     tmpfs /var/log tmpfs defaults,noswap   0 0
     ```
 28. Execute `sudo timedatectl set-timezone Etc/UTC` to set the time zone to UTC.
+29. Execute `sudo reboot now` to apply all changes.
 
 ## Downloading and compiling the services 
 
