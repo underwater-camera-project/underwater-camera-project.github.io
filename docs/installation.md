@@ -50,18 +50,23 @@ The following actions install and configure the operating system of the Raspberr
 19. Execute `sudo apt install i2c-tools` to install tools required for I²C communication.
 20. Execute `sudo apt install nodejs npm` to install the JavaScript runtime environment.
 21. Turn off IPV6 by executing `sudo bash -c 'echo "net.ipv6.conf.all.disable_ipv6 = 1" >> /etc/sysctl.conf'`.
-22. Configure the eth0 interface by creating /etc/network/interfaces.d/eth0 with the following content:
-
+22. Configure the eth0 interface by creating `/etc/network/interfaces.d/eth0` with the following content:
     ```
     allow-hotplug eth0
         
     iface eth0 inet static
         address 192.168.1.1/24
     ```
-
 23. Execute `sudo reboot now` to apply all changes.
 24. Disconnect from Wifi by executing `sudo nmcli con down id <ssid>` to disconnect.
 25. Execute `sudo bash -c 'echo "vm.swappiness=0" >> /etc/sysctl.d/swappiness.conf'` to avoid using your SD-card as swap space.
+26. Execute `sudo sh -c "echo \"APT::Periodic::Enable \\\"0\\\";\" > /etc/apt/apt.conf.d/10periodic"` to disable periodic update/upgrade.
+27. Append the following content to `/etc/fstab` to use virtual memory for /tmp and /var/log. This reduces the load on the system and extends the lifetime of the SD-card.
+    ```
+    tmpfs /tmp     tmpfs defaults,noswap   0 0
+    tmpfs /var/log tmpfs defaults,noswap   0 0
+    ```
+28. Execute `sudo timedatectl set-timezone Etc/UTC` to set the time zone to UTC.
 
 ## Downloading and compiling the services 
 
